@@ -20,7 +20,7 @@
         <h1 class="text-center text-4xl ">Hello welcome to EditSh</h1>
     </div>
     <div class="w-9/12 mx-auto my-10">
-        <div class="w-full flex row justify-evenly">
+        <div class="w-full flex row justify-evenly items-center">
             <div
                 class="w-12 h-12 bg-purple-400 p-2 shadow-2xl border-2 border-black rounded-full my-5 transition-all duration-500 hover:scale-110">
                 <button id="boldButton"><img class="w-full h-full" src="./assets/bold-text.png" alt=""></button>
@@ -52,6 +52,17 @@
                     <input class="w-11 h-11 p-3 bg-purple-400 rounded-full color-picker" type="color" id="colorPicker"
                         value="#c084fc" onmouseleave="setTextColor(this.value)">
                 </button>
+            </div>
+            <div
+                class=" h-14  shadow-2xl border-2 border-black rounded-lg p-2 mt-5 transition-all duration-500 hover:scale-105">
+                <select id="targetLanguage" class="py-1">
+                    <option value="es">Spanish</option>
+                    <option value="fr">French</option>
+                    <option value="de">German</option>
+                    <!-- Add more language options here -->
+                </select>
+                <button id="translateButton"
+                    class="px-3 py-1 font-semibold bg-purple-300 rounded-lg border-2 border-black text-purple-800">Translate</button>
             </div>
         </div>
         <div class=" w-full">
