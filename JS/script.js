@@ -44,3 +44,25 @@ function setTextColor(selectedColor) {
   console.log(selectedColor);
   textArea.style.color = selectedColor;
 }
+
+document.getElementById("translateButton").addEventListener("click", () => {
+  const inputText = document.getElementById("textArea").value;
+  const targetLanguage = document.getElementById("targetLanguage").value;
+  translateText(inputText, targetLanguage);
+});
+
+function translateText(text, targetLanguage) {
+  fetch(
+    `https://api.mymemory.translated.net/get?q=${encodeURIComponent(
+      text
+    )}&langpair=en|${targetLanguage}`
+  )
+    .then((response) => response.json())
+    .then((data) => {
+      const translatedText = data.responseData.translatedText;
+      document.getElementById("textArea").value = translatedText;
+    })
+    .catch((error) => {
+      console.error("Translation error:", error);
+    });
+}
