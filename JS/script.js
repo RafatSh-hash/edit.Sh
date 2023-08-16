@@ -6,6 +6,8 @@ const leftButton = document.getElementById("leftButton");
 const justifyButton = document.getElementById("justifyButton");
 const colorButton = document.getElementById("colorButton");
 const colorPicker = document.getElementById("colorPicker");
+const fontSizePlusButton = document.getElementById("fontSizePlusButton");
+const fontSizeMinusButton = document.getElementById("fontSizeMinusButton");
 const textArea = document.getElementById("textArea");
 
 boldButton.addEventListener("click", function () {
@@ -38,6 +40,24 @@ leftButton.addEventListener("click", function () {
 
 justifyButton.addEventListener("click", function () {
   textArea.style.textAlign = "justify";
+});
+
+justifyButton.addEventListener("click", function () {
+  textArea.style.textAlign = "justify";
+});
+
+fontSizePlusButton.addEventListener("click", function () {
+  const currentSize = parseFloat(
+    window.getComputedStyle(textArea, null).getPropertyValue("font-size")
+  );
+  textArea.style.fontSize = currentSize + 2 + "px";
+});
+
+fontSizeMinusButton.addEventListener("click", function () {
+  const currentSize = parseFloat(
+    window.getComputedStyle(textArea, null).getPropertyValue("font-size")
+  );
+  textArea.style.fontSize = currentSize - 2 + "px";
 });
 
 function setTextColor(selectedColor) {

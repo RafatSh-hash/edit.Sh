@@ -20,33 +20,41 @@
         <h1 class="text-center font-semibold text-4xl ">Hello welcome to Edit.Sh</h1>
     </div>
     <div class="w-9/12 mx-auto my-10">
-        <div class="w-full flex row justify-evenly items-center">
+        <div class="w-full flex flex-row lg:flex-row md:flex-row  flex-wrap justify-evenly items-center">
             <div
-                class="w-12 h-12 bg-purple-400 p-2 shadow-2xl border-2 border-black rounded-full my-5 transition-all duration-500 hover:scale-110">
+                class="w-12 h-12 bg-purple-400 p-2 shadow-2xl border-2 border-black rounded-full mx-3 my-5 transition-all duration-500 hover:scale-110">
                 <button id="boldButton"><img class="w-full h-full" src="./assets/bold-text.png" alt=""></button>
             </div>
             <div
-                class="w-12 h-12 bg-purple-400 p-2 shadow-2xl border-2 border-black rounded-full my-5 transition-all duration-500 hover:scale-110">
+                class="w-12 h-12 bg-purple-400 p-2 shadow-2xl border-2 border-black rounded-full mx-3 my-5 transition-all duration-500 hover:scale-110">
                 <button id="italicButton"><img class="w-full h-full" src="./assets/italic-button.png" alt=""></button>
             </div>
             <div
-                class="w-12 h-12 bg-purple-400 p-2 shadow-2xl border-2 border-black rounded-full my-5 transition-all duration-500 hover:scale-110">
+                class="w-12 h-12 bg-purple-400 p-2 shadow-2xl border-2 border-black rounded-full mx-3 my-5 transition-all duration-500 hover:scale-110">
                 <button id="centerButton"><img class="w-full h-full" src="./assets/center.png" alt=""></button>
             </div>
             <div
-                class="w-12 h-12 bg-purple-400 p-2 shadow-2xl border-2 border-black rounded-full my-5 transition-all duration-500 hover:scale-110">
+                class="w-12 h-12 bg-purple-400 p-2 shadow-2xl border-2 border-black rounded-full mx-3 my-5 transition-all duration-500 hover:scale-110">
                 <button id="leftButton"><img class="w-full h-full" src="./assets/left.png" alt=""></button>
             </div>
             <div
-                class="w-12 h-12 bg-purple-400 p-2 shadow-2xl border-2 border-black rounded-full my-5 transition-all duration-500 hover:scale-110">
+                class="w-12 h-12 bg-purple-400 p-2 shadow-2xl border-2 border-black rounded-full mx-3 my-5 transition-all duration-500 hover:scale-110">
                 <button id="rightButton"><img class="w-full h-full" src="./assets/right.png" alt=""></button>
             </div>
             <div
-                class="w-12 h-12 bg-purple-400 p-2 shadow-2xl border-2 border-black rounded-full my-5 transition-all duration-500 hover:scale-110">
+                class="w-12 h-12 bg-purple-400 p-2 shadow-2xl border-2 border-black rounded-full mx-3 my-5 transition-all duration-500 hover:scale-110">
                 <button id="justifyButton"><img class="w-full h-full" src="./assets/justify.png" alt=""></button>
             </div>
             <div
-                class="w-12 h-12 bg-purple-400  shadow-2xl border-2 border-black rounded-full my-5 transition-all duration-500 hover:scale-110">
+                class="w-12 h-12 bg-purple-400 p-2 shadow-2xl border-2 border-black rounded-full mx-3 my-5 transition-all duration-500 hover:scale-110">
+                <button id="fontSizePlusButton"><img class="w-full h-full" src="./assets/plus.png" alt=""></button>
+            </div>
+            <div
+                class="w-12 h-12 bg-purple-400 p-2 shadow-2xl border-2 border-black rounded-full mx-3 my-5 transition-all duration-500 hover:scale-110">
+                <button id="fontSizeMinusButton"><img class="w-full h-full" src="./assets/minus.png" alt=""></button>
+            </div>
+            <div
+                class="w-12 h-12 bg-purple-400  shadow-2xl border-2 border-black rounded-full mx-3 my-5 transition-all duration-500 hover:scale-110">
 
                 <button id="colorButton" class="color-picker-button">
                     <input class="w-11 h-11 p-3 bg-purple-400 rounded-full color-picker" type="color" id="colorPicker"
@@ -54,7 +62,7 @@
                 </button>
             </div>
             <div
-                class=" h-14  shadow-2xl border-2 border-black rounded-lg p-2 my-5 transition-all duration-500 hover:scale-105">
+                class=" h-14  shadow-2xl border-2 border-black rounded-lg p-2 my-5 mx-3 transition-all duration-500 hover:scale-105">
                 <select id="targetLanguage" class="py-1">
                     <option value="es">Spanish</option>
                     <option value="fr">French</option>
@@ -65,8 +73,8 @@
                     class="px-3 py-1 font-semibold bg-purple-300 rounded-lg border-2 border-black text-purple-800">Translate</button>
             </div>
         </div>
-        <div class=" w-full">
-            <div class="h-[500px] mx-auto bg-gray-200 rounded-xl mt-10 shadow-inner p-10">
+        <div class="w-full">
+            <div class="h-[500px] mx-auto bg-gray-200 rounded-xl mt-10 shadow-inner p-4 md:p-8 lg:p-10">
                 <textarea id="textArea" class="w-full h-full p-5" name="" id="" cols="30" rows="10"></textarea>
 
             </div>
