@@ -19,18 +19,42 @@
     <div class="w-[50%] mx-auto mt-20">
         <h1 class="text-center text-4xl ">Hello welcome to EditSh</h1>
     </div>
-    <div class="w-9/12 mx-auto flex items-center justify-center">
-        <div class="w-[20%] flex flex-col">
+    <div class="w-9/12 mx-auto my-10">
+        <div class="w-full flex row justify-evenly">
             <div
                 class="w-12 h-12 bg-purple-400 p-2 shadow-2xl border-2 border-black rounded-full my-5 transition-all duration-500 hover:scale-110">
-                <button><img class="w-full h-full" src="./assets/bold-text.png" alt=""></button>
+                <button id="boldButton"><img class="w-full h-full" src="./assets/bold-text.png" alt=""></button>
             </div>
             <div
                 class="w-12 h-12 bg-purple-400 p-2 shadow-2xl border-2 border-black rounded-full my-5 transition-all duration-500 hover:scale-110">
-                <button><img class="w-full h-full" src="./assets/italic-button.png" alt=""></button>
+                <button id="italicButton"><img class="w-full h-full" src="./assets/italic-button.png" alt=""></button>
+            </div>
+            <div
+                class="w-12 h-12 bg-purple-400 p-2 shadow-2xl border-2 border-black rounded-full my-5 transition-all duration-500 hover:scale-110">
+                <button id="centerButton"><img class="w-full h-full" src="./assets/center.png" alt=""></button>
+            </div>
+            <div
+                class="w-12 h-12 bg-purple-400 p-2 shadow-2xl border-2 border-black rounded-full my-5 transition-all duration-500 hover:scale-110">
+                <button id="leftButton"><img class="w-full h-full" src="./assets/left.png" alt=""></button>
+            </div>
+            <div
+                class="w-12 h-12 bg-purple-400 p-2 shadow-2xl border-2 border-black rounded-full my-5 transition-all duration-500 hover:scale-110">
+                <button id="rightButton"><img class="w-full h-full" src="./assets/right.png" alt=""></button>
+            </div>
+            <div
+                class="w-12 h-12 bg-purple-400 p-2 shadow-2xl border-2 border-black rounded-full mt-5 transition-all duration-500 hover:scale-110">
+                <button id="justifyButton"><img class="w-full h-full" src="./assets/justify.png" alt=""></button>
+            </div>
+            <div
+                class="w-12 h-12 bg-purple-400  shadow-2xl border-2 border-black rounded-full mt-5 transition-all duration-500 hover:scale-110">
+
+                <button id="colorButton" class="color-picker-button">
+                    <input class="w-11 h-11 p-3 bg-purple-400 rounded-full color-picker" type="color" id="colorPicker"
+                        value="#c084fc" onmouseleave="setTextColor(this.value)">
+                </button>
             </div>
         </div>
-        <div class=" w-[80%]">
+        <div class=" w-full">
             <div class="h-[500px] mx-auto bg-gray-200 rounded-xl mt-10 shadow-inner p-10">
                 <textarea id="textArea" class="w-full h-full p-5" name="" id="" cols="30" rows="10"></textarea>
 
