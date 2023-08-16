@@ -23,47 +23,56 @@
     <div class=" w-9/12 mx-auto my-10">
         <div class="w-full flex flex-row lg:flex-row md:flex-row  flex-wrap justify-evenly items-center">
             <div
-                class="w-12 h-12 bg-purple-400 p-2 shadow-2xl border-2 border-black rounded-full mx-3 my-5 transition-all duration-500 hover:scale-110">
+                class="w-12 h-12 bg-purple-400 p-2 flex flex-col items-center shadow-2xl border-2 border-black rounded-full mx-3 my-5 transition-all duration-500 hover:scale-110">
                 <button id="boldButton"><img class="w-full h-full" src="./assets/bold-text.png" alt=""></button>
+                <p class="text-purple-700 font-semibold my-3">Bold</p>
             </div>
             <div
-                class="w-12 h-12 bg-purple-400 p-2 shadow-2xl border-2 border-black rounded-full mx-3 my-5 transition-all duration-500 hover:scale-110">
+                class="w-12 h-12 bg-purple-400 p-2 flex flex-col items-center shadow-2xl border-2 border-black rounded-full mx-3 my-5 transition-all duration-500 hover:scale-110">
                 <button id="italicButton"><img class="w-full h-full" src="./assets/italic-button.png" alt=""></button>
+                <p class="text-purple-700 font-semibold my-3">Italic</p>
             </div>
             <div
-                class="w-12 h-12 bg-purple-400 p-2 shadow-2xl border-2 border-black rounded-full mx-3 my-5 transition-all duration-500 hover:scale-110">
+                class="w-12 h-12 bg-purple-400 p-2 flex flex-col items-center  shadow-2xl border-2 border-black rounded-full mx-3 my-5 transition-all duration-500 hover:scale-110">
                 <button id="centerButton"><img class="w-full h-full" src="./assets/center.png" alt=""></button>
+                <p class="text-purple-700 font-semibold my-3">Center</p>
             </div>
             <div
-                class="w-12 h-12 bg-purple-400 p-2 shadow-2xl border-2 border-black rounded-full mx-3 my-5 transition-all duration-500 hover:scale-110">
+                class="w-12 h-12 bg-purple-400 p-2 flex flex-col items-center  shadow-2xl border-2 border-black rounded-full mx-3 my-5 transition-all duration-500 hover:scale-110">
                 <button id="leftButton"><img class="w-full h-full" src="./assets/left.png" alt=""></button>
+                <p class="text-purple-700 font-semibold my-3">Left</p>
             </div>
             <div
-                class="w-12 h-12 bg-purple-400 p-2 shadow-2xl border-2 border-black rounded-full mx-3 my-5 transition-all duration-500 hover:scale-110">
+                class="w-12 h-12 bg-purple-400 p-2 flex flex-col items-center  shadow-2xl border-2 border-black rounded-full mx-3 my-5 transition-all duration-500 hover:scale-110">
                 <button id="rightButton"><img class="w-full h-full" src="./assets/right.png" alt=""></button>
+                <p class="text-purple-700 font-semibold my-3">Right</p>
             </div>
             <div
-                class="w-12 h-12 bg-purple-400 p-2 shadow-2xl border-2 border-black rounded-full mx-3 my-5 transition-all duration-500 hover:scale-110">
+                class="w-12 h-12 bg-purple-400 p-2 flex flex-col items-center  shadow-2xl border-2 border-black rounded-full mx-3 my-5 transition-all duration-500 hover:scale-110">
                 <button id="justifyButton"><img class="w-full h-full" src="./assets/justify.png" alt=""></button>
+                <p class="text-purple-700 font-semibold my-3">Justify</p>
             </div>
             <div
-                class="w-12 h-12 bg-purple-400 p-2 shadow-2xl border-2 border-black rounded-full mx-3 my-5 transition-all duration-500 hover:scale-110">
+                class="w-12 h-12 bg-purple-400 p-2 flex flex-col items-center  shadow-2xl border-2 border-black rounded-full mx-3 my-5 transition-all duration-500 hover:scale-110">
                 <button id="fontSizePlusButton"><img class="w-full h-full" src="./assets/plus.png" alt=""></button>
+                <p class="text-purple-700 font-semibold my-3">Plus</p>
             </div>
             <div
-                class="w-12 h-12 bg-purple-400 p-2 shadow-2xl border-2 border-black rounded-full mx-3 my-5 transition-all duration-500 hover:scale-110">
+                class="w-12 h-12 bg-purple-400 p-2 flex flex-col items-center  shadow-2xl border-2 border-black rounded-full mx-3 my-5 transition-all duration-500 hover:scale-110">
                 <button id="fontSizeMinusButton"><img class="w-full h-full" src="./assets/minus.png" alt=""></button>
+                <p class="text-purple-700 font-semibold my-3">Minus</p>
             </div>
             <div
-                class="w-12 h-12 bg-purple-400  shadow-2xl border-2 border-black rounded-full mx-3 my-5 transition-all duration-500 hover:scale-110">
+                class="w-12 h-12 bg-purple-400 flex flex-col items-center  shadow-2xl border-2 border-black rounded-full mx-3 my-5 transition-all duration-500 hover:scale-110">
 
                 <button id="colorButton" class="color-picker-button">
-                    <input class="w-11 h-11 p-3 bg-purple-400 rounded-full color-picker" type="color" id="colorPicker"
+                    <input class="w-11 h-11 p-2 bg-purple-400 rounded-full color-picker" type="color" id="colorPicker"
                         value="#c084fc" onmouseleave="setTextColor(this.value)">
                 </button>
+                <p class="text-purple-700 font-semibold my-1">Color</p>
             </div>
             <div
-                class=" h-14  shadow-2xl border-2 border-black rounded-lg p-2 my-5 mx-3 transition-all duration-500 hover:scale-105">
+                class=" h-14  shadow-2xl border-2 border-black rounded-lg p-2  my-5 mx-3 transition-all duration-500 hover:scale-105">
                 <select id="targetLanguage" class="py-1">
                     <option value="es">Spanish</option>
                     <option value="fr">French</option>
