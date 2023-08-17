@@ -39,6 +39,7 @@
 // }
 
 const linkItems = document.querySelectorAll(".link-item");
+const container = document.querySelector(".container");
 
 function setActiveLink(activeIndex) {
   localStorage.setItem("activeLink", activeIndex);
