@@ -1,13 +1,55 @@
-const links = document.querySelectorAll(".link");
+// // script.js
+// const navLinks = document.querySelectorAll(".link");
 
-links.forEach((link) => {
-  link.addEventListener("click", (event) => {
-    // Remove active class from all links
-    links.forEach((link) => link.classList.remove("active"));
+// navLinks.forEach((link) => {
+//   link.addEventListener("click", (event) => {
+//     navLinks.forEach((link) => link.classList.remove("active"));
+//     event.target.classList.add("active");
+//   });
+// });
+// const linkItems = document.querySelectorAll(".link-item");
 
-    // Add active class to the clicked link
-    link.classList.add("active");
+// function toggleLinkActive(linkIndex) {
+//   linkItems.forEach((item, index) => {
+//     if (index + 1 === linkIndex) {
+//       item.classList.toggle("active");
+//     } else {
+//       item.classList.remove("active");
+//     }
+//   });
+// }
 
-    event.preventDefault(); // Prevent the default link behavior
+// const linkItems = document.querySelectorAll(".link-item");
+// const isActive = [true, false]; // Initially the first link is active
+
+// function toggleLinkActive(linkIndex) {
+//   isActive[linkIndex - 1] = !isActive[linkIndex - 1];
+
+//   if (!isActive.includes(true)) {
+//     isActive[linkIndex - 1] = true; // Ensure at least one link is active
+//   }
+
+//   linkItems.forEach((item, index) => {
+//     if (isActive[index]) {
+//       item.classList.add("active");
+//     } else {
+//       item.classList.remove("active");
+//     }
+//   });
+// }
+
+const linkItems = document.querySelectorAll(".link-item");
+
+function setActiveLink(activeIndex) {
+  localStorage.setItem("activeLink", activeIndex);
+}
+
+// Check local storage for active link and apply style
+const activeLinkIndex = localStorage.getItem("activeLink");
+if (activeLinkIndex !== null) {
+  linkItems.forEach((item, index) => {
+    if (index + 1 === parseInt(activeLinkIndex)) {
+      item.classList.add("active");
+    }
   });
-});
+}

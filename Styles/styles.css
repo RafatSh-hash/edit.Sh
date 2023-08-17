@@ -20,30 +20,16 @@
     border-radius: 50%;
 }
 
-.link-group {
-    display: flex;
-    background-color: #f0f0f0;
-    padding: 10px;
-    border-radius: 10px;
-}
-
-.link {
-    display: block;
-    padding: 10px 10px;
+.link-item {
     text-decoration: none;
     color: #333;
-    border-radius: 10px;
-    transition: background-color 0.3s ease, color 0.3s ease;
-    /* Added color transition */
+
+    padding: 10px 20px;
+    border: 1px solid #ccc;
+    cursor: pointer;
 }
 
-.link.active {
-    background-color: #8a3ab9;
+.link-item.active {
+    background-color: purple;
     color: #fff;
-}
-
-.link:hover {
-    background-color: #ddd;
-    color: #000;
-    /* Change text color on hover */
 }
